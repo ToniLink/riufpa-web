@@ -16,7 +16,7 @@
 <dspace:layout navbar="off"  titlekey="jsp.statistics.report.title">
 
     <link rel="stylesheet" href="<%= request.getContextPath()%>/static/css/estatistica.css" type="text/css"/>
-    <h1><fmt:message key="estatistica.titulo.publica"/></h1>
+    <h1><fmt:message key="estatistica.publica.title"/></h1>
 
     <dspace:include page="/estatistica-publica/navbar-publica.jsp" />
 

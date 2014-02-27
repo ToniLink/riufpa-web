@@ -101,10 +101,8 @@
         Biblioteca Central Prof. Dr. Clodoaldo Beckmann <br />
         Rua Augusto Corrêa, n. 1 – CEP 66075-110 Belém – PA <br />
         Tel. +55 (91) 3201-7110 / 3201-7787 / 3201-7209 - Fax: +55 (91) 3201-7351<br />
-
-        Email: riufpabc@ufpa.br<br /> 
-
-
+        <fmt:message key="jsp.home.dspace.version"/>        
+        –
         <a href="<%= request.getContextPath()%>/creditos" class="secaoCreditos">
             <fmt:message key="jsp.home.credits"/>
         </a>
@@ -112,6 +110,7 @@
         <a href="<%= request.getContextPath()%>/mapa" class="secaoSitemap">
             <fmt:message key="jsp.home.sitemap"/>
         </a>
+        
     </div>
 
 </div>

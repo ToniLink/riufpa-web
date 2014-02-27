@@ -151,11 +151,6 @@
             </td>
         </tr>
     </table>
-
-                <form method="post"  action="<%=request.getContextPath()%>/relatorio" >
-                    <input  type="submit"  value="teste"> 
-                    <input type="hidden" name="teste" value="teste">
-                </form>
                     
     <dspace:sidebar>
         <dspace:include page="/layout/parceiros.jsp" />

@@ -19,7 +19,7 @@
         }
     </style>
 
-    <h1><fmt:message key="estatistica.titulo.publica"/></h1>
+    <h1><fmt:message key="estatistica.publica.title"/></h1>
 
     <dspace:include page="/estatistica-publica/navbar-publica.jsp" />
 

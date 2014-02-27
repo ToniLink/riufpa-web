@@ -180,9 +180,9 @@
         </li>
         
         <li >
-            <a href="<%= request.getContextPath() %>/estatistica-publica/estatistica-geral-publica.jsp">
-                        <fmt:message key="jsp.layout.navbar-admin.statistics"/>
-                    </a>
+            <a href="<%= request.getContextPath() %>/Estatistica?nome=csc&publica=true">
+                <fmt:message key="jsp.layout.navbar-admin.statistics"/>
+            </a>
         </li>
         
 <%
