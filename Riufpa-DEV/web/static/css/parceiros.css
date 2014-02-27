@@ -1,0 +1,91 @@
+/*
+    Document   : parceiros
+    Created on : 10/10/2012, 10:26:37
+    Author     : portal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+Hack para ajustar a largura da sidebar da página inicial.
+*/
+.sidebar{
+    width: 150px !important;
+}
+
+
+/*Estilos para a barra de parceiros*/
+.parceiros {
+    height:100%;
+    color: white;
+    background: #2E6AB1;
+    padding: 0px 10px 0px 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+.parceiros p{
+    font-family: "verdana", "Arial", "Helvetica", sans-serif;
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+.parceiros img{
+    background-color: transparent;
+    border-bottom: #2ea125;
+    border: 0px;
+}
+.parceiros img:hover{
+    opacity: 0.7;
+    filter: alpha(opacity='70'); /* IE8 */
+    -webkit-box-shadow: 0px 1px 15px rgba(235, 240, 253, 1);
+    box-shadow: 0px 1px 15px rgba(235, 240, 253, 1);
+}
+.parceiros #blocoRedes{
+    margin-left: auto;
+    margin-right: auto;
+}
+.parceiros #redes{
+    width: 40px !important;
+    height: 40px !important;
+
+    margin-top: 0px;
+
+    opacity: 0.6;
+    filter: alpha(opacity='60');
+
+    background-color: transparent;
+    border-bottom: #2ea125;
+    border: 0px;
+}
+.parceiros #redes:hover{
+    opacity: 1;
+    filter: alpha(opacity='100');
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.parceiros .item{
+    padding-top:5px;
+}
+
+.redesSociais{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.redesSociais img{
+    border: 0px;
+    opacity:0.5;
+    transition:all 0.2s;
+    -moz-transition:all 0.2s;
+    -webkit-transition:all 0.2s;
+    -o-transition:all 0.2s;
+}
+.redesSociais img:hover{
+    opacity:1;
+}

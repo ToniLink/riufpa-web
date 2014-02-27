@@ -1,0 +1,79 @@
+/*
+    Document   : mydspace
+    Created on : 10/12/2012, 10:39:09
+    Author     : Manoel Afonso
+    Description:
+        Padrões de tabelas do RIUFPA.
+*/
+
+.tabela{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-collapse:collapse;
+    border: 2px solid #2E6AB1;
+    font-size: 12pt;
+}
+.tabela th{
+    background-color: #C9D8FF;
+    text-align: center;
+    font-size: 11pt;
+    padding: 10px;
+}
+.tabela td{
+    padding: 10px;
+    text-align: left;
+}
+.tabela td.num{ /* Para uso em tabelas que precisam de valores numéricos centralizados. */
+    text-align: center;
+}
+.tabela .tituloTabela{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2E6AB1;
+    color: white;
+    font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.tabela .tituloTabela td{
+    text-align: center;
+}
+
+.tabela .destaque{
+    background: #121844;
+    color: white;
+    font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+}
+.tabela .destaque:hover{
+    background: #121844;
+}
+.tabela .destaque td{
+    text-align: center;
+}
+
+.stripe{
+    color: black;
+}
+
+.tabela .stripe{
+    background-color: #EAF0FF;
+}
+.tabela tr:hover, .tabela .stripe:hover{
+    background-color: #DBE6FF;
+}
+
+.tabela .tituloTabela:hover{
+    background-color: #2E6AB1;
+}
+
+/* Estilos específicos para as tabelas de tarefas.*/
+.tarefa td{
+    text-align: justify;
+}

@@ -1,0 +1,58 @@
+/*
+    Document   : mydspace
+    Created on : 10/12/2012, 10:39:09
+    Author     : portal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.tabela{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-collapse:collapse;
+    border: 2px solid #2E6AB1;
+    font-size: 12pt;
+
+    text-align: left;
+}
+.tabela th{
+    background-color: #C9D8FF;
+    text-align: center;
+    font-size: 11pt;
+    padding: 10px;
+}
+.tabela td{
+    padding: 10px;
+}
+
+.tabela .stripe{
+    background-color: #EBF0FD;
+    color: black;
+}
+.tabela tr:hover, .tabela .stripe:hover{
+    background-color: #D6E1FF;
+}
+
+.tarefa td{
+    text-align: justify;
+}
+
+.tabela .qtde{
+    text-align: center;
+}
+
+.tabela #tituloTabela{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2E6AB1;
+    color: white;
+    text-align: center;
+    font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}

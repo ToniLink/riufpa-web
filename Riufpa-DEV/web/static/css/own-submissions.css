@@ -1,0 +1,32 @@
+/*
+    Document   : own-submissions
+    Created on : 23/07/2012, 11:32:44
+    Author     : portal
+    Description:
+        Estilos da tabela e das caixas de busca.
+*/
+
+.ordenacao {
+    font-family: "verdana", "Arial", "Helvetica", sans-serif;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: bold;
+    background: #EBF0FD;
+    color: #252645;
+    vertical-align: middle;
+    border-radius: 0.5em; /* Firefox, SeaMonkey, K-meleon y los que usan el motor Gecko) */
+    -webkit-border-radius: 0.5em; /* Google Chrome, Safari y los que usan el motor WebKit */
+    -khtml-border-radius: 0.5em; /* Konqueror */
+    border: 1px solid #5E78B5;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Sobrescreve o alinhamento. */
+.tabela td{
+    text-align: justify !important;
+}

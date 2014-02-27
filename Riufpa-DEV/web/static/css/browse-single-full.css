@@ -1,0 +1,52 @@
+/*
+    Document   : single
+    Created on : 01/08/2012, 09:56:34
+    Author     : portal
+    Description:
+        Estilos para os links "Próximo" e "Anterior" das páginas de índices.
+*/
+
+.navegacao{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 12px;
+    padding: 3px 4px;
+    border: 1px solid #A8C0FF;
+    text-decoration: none;
+    color: #2E6AB1;
+    font-weight: bold;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+.navegacao:hover{
+    border: 1px solid #2b66a5;
+    color: #000;
+    background-color: #C9D8FF;
+}
+
+/* Sobrescreve a largura da tabela padrão. */
+.tabelaSingle{
+    width: 50% !important;
+}
+
+.tabelaNavegacao{
+    margin: 0 auto;
+}
+.tabelaNavegacao tr > td {
+  padding-bottom: 10px;
+}
+.tabelaNavegacao .sel{
+    padding-right: 20px;
+}
+.tabelaNavegacao .dir{
+    text-align: right;
+}
+.tabelaNavegacao .esq{
+    text-align: left;
+}
+.tabelaNavegacao .button{ /*conserta o alinhamento do botão*/
+    margin-bottom: 0px;
+}

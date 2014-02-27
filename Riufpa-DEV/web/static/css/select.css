@@ -1,0 +1,96 @@
+/*
+ * @CSS3 Selectbox
+ * @author Martin Ivanov
+ * @website http://wemakesitesnet
+ * @blog http://acidmartin.wordpress.com
+ * @twitter https://twitter.com/#!/wemakesitesnet
+ **/
+
+.css3-selectbox,
+.css3-selectbox select,
+.css3-selectbox::after,
+.css3-selectbox::before {
+    display: inline-block;
+    vertical-align: top;
+    height: 25px;
+}
+
+.css3-selectbox::after,
+.css3-selectbox::before {
+    content: "";
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    pointer-events: none;
+}
+
+/* Área da seta */
+.css3-selectbox,
+.css3-selectbox::after {
+    background: #C9D8FF;
+}
+
+.css3-selectbox {
+    border: solid 1px #A8C0FF;
+    overflow: hidden;
+    border-radius: 3px;
+    position: relative;
+}
+
+.css3-selectbox:hover {
+    border: solid 1px #5E78B5;
+}
+
+/* Cada item */
+.css3-selectbox option {
+    padding: 6px 8px;
+    text-shadow: none;
+    border-radius: 3px;
+    background-color: #C9D8FF;
+}
+
+/* Seta */
+.css3-selectbox::before {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    border-top-color: #004C9E;
+}
+
+.css3-selectbox::after {
+    position: relative;
+    left: 0px;
+    width: 0px;
+    margin: 0 0 0 0px;
+}
+
+/* Área principal */
+.css3-selectbox select {
+    margin: 0;
+    padding: 3px 0px 0px 0px;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /*Remove a seta do FF*/
+    appearance: none;
+    text-indent: 0.01px;
+    width: 100% !important;
+    background: #C9D8FF;
+    font: normal 10pt 'Verdana';
+    font-weight: bold;
+    color: #2E6AB1;
+    outline: none;
+    transition: all .2s;
+
+    text-overflow: '';
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.css3-selectbox select:hover, .css3-selectbox:hover:after {
+    background: #B7CBFF;
+    color:#004CA6;
+}

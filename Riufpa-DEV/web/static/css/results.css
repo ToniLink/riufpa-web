@@ -1,0 +1,47 @@
+/*
+    Document   : results
+    Created on : 17/10/2012, 09:34:02
+    Author     : portal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#texto_busca{
+    width: 83%;
+}
+
+#resultados #tlocation{
+    width: 100%;
+}
+
+#controlBusca table{
+    margin: 10px auto;
+}
+#controlBusca table td{
+    vertical-align: middle;
+    padding: 0px 10px 10px 0px;
+}
+
+#controlBusca label {
+    font-family: Arial, Verdana;
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    width: auto;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+/* Para o campo de busca ficar alinhado com a label. */
+.button{
+    margin-bottom: 0px !important;
+}
+
+.input{
+    font-family: Arial, Verdana;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #b9bdc1;
+    width: 500px;
+}

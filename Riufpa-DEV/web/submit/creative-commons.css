@@ -1,0 +1,81 @@
+body {
+    background-color: #EBF0FD;
+    font-family:verdana;
+    color:#333;
+}
+
+#main {
+    background:#EBF0FD;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: justify;
+    border: none;
+}
+
+#main input[type="submit"]{
+    font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor:pointer;
+    color: #2E6AB1;
+    width:auto;
+    margin-bottom: 10px;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    background: #C9D8FF;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #A8C0FF;
+    transition: all .2s;
+}
+#main input[type="submit"]:hover{
+    border:1px solid #5E78B5;
+    background: #B7CBFF;
+    color: #004CA6;
+}
+#main input[type="submit"]:active{
+    position:relative;
+    background: #AAC2FF;
+    color: #004CA6;
+    top: 1px;
+}
+
+/* Looks like you have to specify the width of #menu
+or IE5 Mac stretches it all the way across the div, and
+Opera streches it half way. */
+
+#main #menu {
+    border-left:1px dotted #ccc;
+    float:right;
+    width:230px;
+    background:white;
+    margin:0px 0px 10px 10px;
+}
+
+td, h3, p,h1,pre {
+    margin:0px 20px 20px 20px;
+    font-size:12px;
+    line-height:140%;
+}
+
+.header {
+    padding-left: 10px;
+    padding-top:30px;
+}
+
+.nav	{
+    padding-left:10px;
+    padding-bottom:10px;
+    font-size:11px;
+    margin-bottom:16px;
+}
+
+#menu p {
+    font-size:11px;
+}
+
+.dent {
+    margin-left:64px;
+}

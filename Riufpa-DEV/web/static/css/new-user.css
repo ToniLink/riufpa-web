@@ -1,0 +1,87 @@
+/*
+    Document   : new-user
+    Created on : 02/08/2012, 10:26:41
+    Author     : portal
+    Description:
+        Estilos para o formulário de cadastro de usuário.
+*/
+
+#obrigatorio{
+    color: red;
+}
+
+#cadastro_usuario {
+    width: 70%;
+    padding: 20px;
+    background: #EBF0FD;
+    overflow:auto;
+
+    margin-left:auto;
+    margin-right:auto;
+
+    /* Border style */
+    border: 1px solid #5E78B5;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#cadastro_usuario h3{
+    text-align: center;
+    font-size: 14pt;
+    text-shadow: 1px 1px 1px #CCCCCC;
+}
+
+#cadastro_usuario table{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#cadastro_usuario label {
+    font-family: Arial, Verdana;
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+#cadastro_usuario #img_captcha{
+    display: inline;
+    vertical-align:middle;
+}
+
+#cadastro_usuario #trocar_img{
+    vertical-align: middle;
+}
+#cadastro_usuario #capctha_erro{
+    color: red;
+    font-weight: bold;
+}
+#cadastro_usuario #enviar{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.input{
+    font-family: Arial, Verdana;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #b9bdc1;
+    width: 100%;
+    color: #5E78B5;
+}
+
+
+
+.descricaoConta{
+    padding-left: 130px;
+    padding-right: 40px;
+    font-size: 15px;
+    text-align:justify;
+    text-justify:inter-word;
+    width: auto;
+    height: 50px;
+    color: #5E78B5;
+}

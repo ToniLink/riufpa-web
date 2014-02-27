@@ -1,0 +1,52 @@
+/*
+    Document   : footer-default
+    Created on : 25/07/2012, 09:33:47
+    Author     : portal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* Estilos para o botão de "ir para o topo". */
+.ir_topo{
+    position: fixed;
+    bottom: 60px;
+    right: 2%;
+    cursor: pointer;
+}
+.ir_topo:hover{
+    opacity: 0.7;
+    filter: alpha(opacity='70'); /* IE8 */
+    -webkit-box-shadow: 0px 1px 15px rgba(235, 240, 253, 1);
+    box-shadow: 0px 1px 15px rgba(235, 240, 253, 1);
+}
+
+/* Área do rodapé.*/
+.area_rodape{
+    background-color: #C9D8FF;
+    padding: 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Logomarcas da UFPA e BC. */
+.area_rodape #logos{
+    float: right;
+    padding: 10px;
+    border: 0px;
+}
+
+/* Informações do rodapé (endereço, créditos, etc). */
+.area_rodape #info{
+    padding: 10px;
+    width: 100%;
+}
+
+/* Apenas para corrigir as posições da última linha da tabela que define o layout do site.*/
+.rodape{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    border-collapse: collapse;
+    width: auto;
+}

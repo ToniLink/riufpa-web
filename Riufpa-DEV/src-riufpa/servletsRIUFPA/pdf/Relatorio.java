@@ -1,0 +1,211 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package servletsRIUFPA.pdf;
+
+import java.awt.geom.Dimension2D;
+import java.awt.geom.Rectangle2D;
+import java.io.IOException;
+import java.util.Date;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import org.pdfclown.documents.Document;
+import org.pdfclown.documents.Page;
+import org.pdfclown.documents.PageFormat;
+import org.pdfclown.documents.contents.colorSpaces.DeviceRGBColor;
+import org.pdfclown.documents.contents.composition.BlockComposer;
+import org.pdfclown.documents.contents.composition.PrimitiveComposer;
+import org.pdfclown.documents.contents.composition.XAlignmentEnum;
+import org.pdfclown.documents.contents.composition.YAlignmentEnum;
+import org.pdfclown.documents.contents.fonts.StandardType1Font;
+import org.pdfclown.documents.interchange.metadata.Information;
+import org.pdfclown.files.File;
+import org.pdfclown.files.SerializationModeEnum;
+
+/**
+ *
+ * @author portal
+ */
+public class Relatorio extends HttpServlet {
+
+    /**
+     * Processes requests for both HTTP
+     * <code>GET</code> and
+     * <code>POST</code> methods.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+//        PrintWriter out = response.getWriter();
+        // 2. Building the document...
+        File file;
+        try {
+            // Instantiate a new PDF document!
+            file = new File();
+            Document document = file.getDocument();
+
+            buildPdf_page(document, "rereerererer");
+
+            buildPdf_metadata(document);
+        } catch (Exception e) {
+            System.err.println("An exception happened while building the sample: " + e.getMessage());
+            return;
+        }
+
+        // 3. Serializing the document...
+        try {
+            file.save(
+                    new org.pdfclown.bytes.OutputStream(
+                    response.getOutputStream()),
+                    SerializationModeEnum.Standard);
+            response.setContentType("application/pdf");
+//            response.setHeader("Content-Disposition", "attachment");
+        } catch (Exception e) {
+            System.err.println("An exception happened while serializing the sample: " + e.getMessage());
+        } finally {
+            file.close();
+        }
+
+    }
+
+    private void buildPdf_metadata(Document document) {
+        // Document metadata.
+        Information info = new Information(document);
+        document.setInformation(info);
+        info.setAuthor("Manoel Afonso");
+        info.setCreationDate(new Date());
+        info.setCreator(Relatorio.class.getName());
+        info.setTitle("Exemplo - Relatório");
+        info.setSubject("Criação de relatório para as estatísticas.");
+    }
+
+    private void buildPdf_page(Document document, String comment) {
+        // Set default page size (A4)!
+        document.setPageSize(PageFormat.getSize());
+
+        // Add page!
+        Page page = new Page(document);
+        document.getPages().add(page);
+        Dimension2D pageSize = page.getSize();
+
+        PrimitiveComposer composer = new PrimitiveComposer(page);
+        // Add the background template!
+//    composer.showXObject(
+//      SampleHelper.createTemplate(document)
+//      );
+
+        // Wrap the content composer inside a block filter in order to achieve higher-level typographic control!
+        BlockComposer blockComposer = new BlockComposer(composer);
+//        blockComposer.setHyphenation(true);
+
+        Rectangle2D.Double frame = new Rectangle2D.Double(
+                30,
+                150,
+                pageSize.getWidth() - 100,
+                pageSize.getHeight());
+
+        blockComposer.begin(frame, XAlignmentEnum.Left, YAlignmentEnum.Top);
+
+        StandardType1Font titleFont = new StandardType1Font(
+                document,
+                StandardType1Font.FamilyEnum.Helvetica,
+                true,
+                false);
+        composer.setFont(titleFont, 30);
+
+        blockComposer.showText("Relatório de Estatísticas Gerais do RIUFPA");
+        blockComposer.showBreak();
+
+        StandardType1Font bodyFont = new StandardType1Font(
+                document,
+                StandardType1Font.FamilyEnum.Times,
+                false,
+                false);
+        composer.setFont(bodyFont, 16);
+
+        blockComposer.showText("This is an on-the-fly servlet-driven PDF sample document generated by PDF Clown for Java.");
+        blockComposer.end();
+
+        // Move past the closed block!
+        frame.y = blockComposer.getBoundBox().getMaxY() + 30;
+        frame.height -= (blockComposer.getBoundBox().getHeight() + 30);
+
+        // Showing the posted image...
+        // Instantiate a jpeg image object!
+
+        blockComposer.begin(frame, XAlignmentEnum.Left, YAlignmentEnum.Top);
+        composer.setFont(bodyFont, 12);
+        composer.setFillColor(new DeviceRGBColor(1, 0, 0));
+        blockComposer.showText("The file you uploaded wasn't a valid JPEG image!");
+        blockComposer.end();
+
+        // Move past the closed block!
+        frame.y = blockComposer.getBoundBox().getMaxY() + 20;
+        frame.height -= (blockComposer.getBoundBox().getHeight() + 20);
+
+
+        if (comment != null) {
+            blockComposer.begin(frame, XAlignmentEnum.Justify, YAlignmentEnum.Top);
+            composer.setFont(
+                    new StandardType1Font(
+                    document,
+                    StandardType1Font.FamilyEnum.Courier,
+                    false,
+                    false),
+                    7);
+            blockComposer.showText(comment);
+            blockComposer.end();
+        }
+
+        composer.flush();
+    }
+
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    /**
+     * Handles the HTTP
+     * <code>GET</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+
+    /**
+     * Handles the HTTP
+     * <code>POST</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+
+    /**
+     * Returns a short description of the servlet.
+     *
+     * @return a String containing servlet description
+     */
+    @Override
+    public String getServletInfo() {
+        return "Short description";
+    }// </editor-fold>
+}

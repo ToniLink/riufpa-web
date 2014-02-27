@@ -1,0 +1,51 @@
+/*
+    Document   : creative-commons-edit
+    Created on : 31/01/2013, 10:31:18
+    Author     : portal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+iframe{
+    border: 1px solid #5E78B5;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.licenca{
+    font-family: "verdana", "Arial", "Helvetica", sans-serif;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: bold;
+    background: #EBF0FD;
+    color: #252645;
+    border-radius: 0.5em; /* Firefox, SeaMonkey, K-meleon y los que usan el motor Gecko) */
+    -webkit-border-radius: 0.5em; /* Google Chrome, Safari y los que usan el motor WebKit */
+    -khtml-border-radius: 0.5em; /* Konqueror */
+    border: 1px solid #5E78B5;
+    text-align:left;
+    border-spacing:10px;
+    text-decoration: none;
+    width: 70%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.licenca h3 {
+    color: black;
+    text-align: center;
+    font-family: "Verdana","Arial","Helvetica",sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    text-shadow: 1px 1px 1px rgb(204, 204, 204);
+}
+
+.licenca #frame{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

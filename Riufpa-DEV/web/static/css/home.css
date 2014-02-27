@@ -1,0 +1,91 @@
+/*
+    Document   : home
+    Created on : 01/08/2012, 12:22:39
+    Author     : portal
+    Description:
+        Estilos para componentes da página inicial.
+*/
+
+.cf:before, .cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+.cf {
+    zoom:1;
+}
+
+/* Definição do formulário */
+.formulariodemo {
+    margin: 0 auto;
+    padding: 5px;
+    /*width: 502px;*/
+    width: 60%;
+}
+
+/* Campo de texto para a pesquisa */
+#texto_busca {
+    background-color: white;
+
+    /* Apagamos a borda definida globalmente e definimos as bordas específicas.*/
+    border: none;
+    border-bottom: solid #B7CBFF 1px;
+    border-top: solid #B7CBFF 1px;
+    border-left: solid #B7CBFF 1px;
+
+    border-radius: 3px 0 0 3px;
+    float: left;
+    font-family: Arial;
+    font-size:15px;
+    font-weight: bold;
+    height: 20px;
+    padding: 10px 5px;
+    /*width: 340px;*/
+    width: 67.5%;
+    box-shadow: none;
+    transition: all 0.2s ease;
+}
+
+/* Foca no input e no butão */
+#texto_busca:focus{
+    border-color: #2E6AB1;
+}
+#texto_busca:focus + #btn_busca,
+#texto_busca + #btn_busca:hover,
+#texto_busca[autofocus] + #btn_busca{
+    border-color: #2E6AB1;
+}
+
+/* Se usarmos 'required' no campo de texto, também não queremos sombras. */
+#texto_busca:required {
+    box-shadow: none;
+}
+
+/* Botão de busca. */
+#btn_busca {
+    background-color: #D6E1FF;
+    border: solid #B7CBFF 1px;
+    border-radius: 0 3px 3px 0;
+    color: #2E6AB1;
+    cursor: pointer;
+    float: right;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    height: 42px;
+    overflow: visible;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    /*width: 120px;*/
+    width: 30%;
+    transition: all 0.2s ease;
+}
+#btn_busca:hover{
+    background: #B7CBFF;
+}
+
+#btn_busca:active, #btn_busca:focus{
+    background: #C9D8FF;
+}

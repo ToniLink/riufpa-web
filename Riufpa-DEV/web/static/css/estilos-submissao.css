@@ -1,0 +1,201 @@
+/*
+    Document   : escolher-tipo
+    Created on : 12/11/2012, 11:35:48
+    Author     : portal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*Formulário*/
+.formularioDesc{
+    font-family: "verdana", "Arial", "Helvetica", sans-serif;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: bold;
+    background: #EBF0FD;
+    color: #252645;
+    border-radius: 0.5em; /* Firefox, SeaMonkey, K-meleon y los que usan el motor Gecko) */
+    -webkit-border-radius: 0.5em; /* Google Chrome, Safari y los que usan el motor WebKit */
+    -khtml-border-radius: 0.5em; /* Konqueror */
+    border: 1px solid #5E78B5;
+    text-align:left;
+    border-spacing:10px;
+    text-decoration: none;
+    width: 70%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding:0px 20px 20px 90px;*/
+}
+.formularioDesc h3{
+    text-align: center;
+    font-size: 14pt;
+}
+.formularioDesc p{
+    padding-left: 20px;
+}
+.formularioDesc #mensagem{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.formularioDesc #tiposDoc{
+    padding:0px 20px 20px 90px;
+}
+
+
+#controles {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.direita {
+    float: right;
+    margin-right: 10px;
+}
+.esquerda {
+    overflow: hidden;
+    text-align: center;
+}
+.centralizar{
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+.botaoCorrigir{
+    float: right;
+    margin: 10px;
+}
+
+iframe{
+    border: 1px solid #5E78B5;
+}
+
+.licenca{
+    width: 100%;
+
+}
+.texto-licenca{
+    font-family: monospace;
+    font-size: 12pt;
+    padding-top: 30px;
+    margin-right: 30px;
+    text-align:justify;
+}
+
+
+#listaArquivos{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse:collapse;
+}
+#listaArquivos th{
+    background-color: #C9D8FF;
+    text-align: center;
+    font-size: 12pt;
+    padding: 10px;
+}
+#listaArquivos td{
+    padding: 10px;
+    text-align: center;
+}
+#tituloTabela{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2E6AB1;
+    color: white;
+    text-align: left;
+    font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+/*Botões radio*/
+
+.regular-radio {
+    display: none;
+}
+
+.descricao{
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    line-height: 30px;
+}
+.descricao:hover{
+    cursor: pointer;
+}
+
+.regular-radio + label {
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+}
+
+.regular-radio:checked + label:after {
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    position: absolute;
+    top: 3px;
+    background: #5E78B5;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+    text-shadow: 0px;
+    left: 3px;
+    font-size: 32px;
+}
+
+.regular-radio:checked + label {
+    background-color: #e9ecee;
+    color: #99a1a7;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.regular-radio + label:active, .regular-radio:checked + label:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.big-radio + label {
+    padding: 16px;
+}
+
+.big-radio:checked + label:after {
+    width: 24px;
+    height: 24px;
+    left: 4px;
+    top: 4px;
+}
+
+/*
+Estilos dos alertas.
+*/
+.LV_validation_message{
+    font-weight:bold;
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 11pt;
+    margin:0px;
+    display: block;
+    text-align: center;
+}
+
+.LV_valid {
+    color:#00CC00;
+}
+
+.LV_invalid {
+    color:#CC0000;
+}
+
+.LV_invalid_field{
+    background-color: #FFEFEF;
+}

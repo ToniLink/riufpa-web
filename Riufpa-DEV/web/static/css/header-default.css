@@ -1,0 +1,32 @@
+/*
+    Document   : header-default
+    Created on : 12/08/2013, 11:38:35
+    Author     : portal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*Área de atualização de browser.*/
+.alerta{
+    background: #EBF0FD;
+    text-align:center;
+    margin:0 auto;
+    border-top: 1px #2E6AB1 solid;
+    border-bottom: 1px #2E6AB1 solid;
+}
+.alerta .mensagem{
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    font-size: 13pt;
+    color: #0332B2;
+}
+.alerta p{
+    margin: 5px;
+}
+/*Diz explicitamente que as imagens não devem ter bordas, pois (só) o IE pensa que elas devem ter.*/
+.alerta img{
+    border: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}

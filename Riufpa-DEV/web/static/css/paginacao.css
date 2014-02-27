@@ -1,0 +1,74 @@
+/*
+    Document   : paginacao
+    Created on : 10/07/2012, 09:57:18
+    Author     : Manoel Afonso
+    Description:
+        Estilos para aplicar em paginação. Útil em páginas de pesquisa, por exemplo, que necessitam
+        enumerar as páginas. O modelo para aplicar a paginação é como se segue:
+
+        <ul class="paginacao">
+            <li><a class="anteriorProx" href="#">Anterior</a></li>      <!-- Página anterior/seguinte-->
+            <li><a class="atual" href="#">1</a></li>                    <!-- Página atual-->
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a class="anteriorProx" href="#">Próximo</a></li>
+        </ul>
+*/
+
+
+.paginacao{
+    padding: 2px;
+    line-height: 30px;
+}
+
+.paginacao ul{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 16px;
+}
+
+.paginacao li{
+    list-style-type: none;
+    display: inline;
+}
+
+.paginacao a, .paginacao a:visited{
+    padding: 3px 4px;
+    border: 1px solid #A8C0FF;
+    text-decoration: none;
+    color: #2e6ab1;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    transition:all 0.2s;
+    -moz-transition:all 0.2s;
+    -webkit-transition:all 0.2s;
+    -o-transition:all 0.2s;
+}
+
+.paginacao a:hover, .paginacao a:active{
+    border: 1px solid #2b66a5;
+    color: #000;
+    background-color: #C9D8FF;
+}
+
+.paginacao a.atual{
+    background-color: #2e6ab1;
+    color: #FFF !important;
+    border-color: #2b66a5;
+    font-weight: bold;
+    cursor: default;
+}
+
+.paginacao a.desativado, .paginacao a.desativado:hover{
+    background-color: white;
+    cursor: default;
+    color: #929292;
+    border-color: #929292;
+    font-weight: normal !important;
+}
+
+.paginacao a.anteriorProx{
+    font-weight: bold;
+}

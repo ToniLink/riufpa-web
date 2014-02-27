@@ -1,0 +1,161 @@
+/*
+    Document   : lista-grupo-eperson
+    Created on : 09/01/2013, 11:33:30
+    Author     : portal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.tabela{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse:collapse;
+    border: 2px solid #2E6AB1;
+}
+.tabela #tituloTabela{
+    background-color: #2E6AB1;
+    color: white;
+    text-align: center;
+    font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.tabela th{
+    background-color: #C9D8FF;
+    text-align: left;
+    font-size: 12pt;
+    padding: 10px;
+}
+.tabela td{
+    padding: 10px;
+    font-size: 12pt;
+}
+.tabela tr{
+    background-color: white;
+}
+.tabela tr:hover{
+    background-color: #D6E1FF;
+}
+.tabela #impar{
+    background-color: #EBF0FD;
+}
+.tabela #impar:hover{
+    background-color: #D6E1FF;
+}
+
+
+
+.cf:before, .cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+.cf {
+    zoom:1;
+}
+
+/* Definição do formulário */
+.formulariodemo {
+    margin: 0 auto;
+    padding: 5px;
+    width: 502px;
+}
+
+/* Campo de texto para a pesquisa */
+.formulariodemo input {
+    background-color: white;
+
+    /* Apagamos a borda definida globalmente e definimos as bordas específicas.*/
+    border: none;
+    border-bottom: solid #B7CBFF 1px;
+    border-top: solid #B7CBFF 1px;
+    border-left: solid #B7CBFF 1px;
+
+    border-radius: 5px 0 0 5px;
+    float: left;
+    font-family: Arial;
+    font-size:15px;
+    font-weight: bold;
+    height: 20px;
+    padding: 10px 5px;
+    width: 371px;
+    box-shadow: none;
+}
+.formulariodemo input:focus {
+    outline: 0;
+    background: white;
+}
+
+/* Estilos para os placeholders de cada navegador. */
+.formulariodemo input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+.formulariodemo input::-webkit-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+.formulariodemo input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Se usarmos 'required' no campo de texto, também não queremos sombras. */
+.formulariodemo input:required {
+    box-shadow: none;
+}
+
+/* Botão de busca. */
+.formulariodemo button {
+    background-color: #D6E1FF;
+
+    /* Apagamos a borda definida globalmente e definimos as bordas específicas.*/
+    border: none;
+    border-bottom: solid #B7CBFF 1px;
+    border-top: solid #B7CBFF 1px;
+    border-right: solid #B7CBFF 1px;
+
+    border-radius: 0 5px 5px 0;
+    color: #2E6AB1;
+    cursor: pointer;
+    float: right;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    height: 42px;
+    overflow: visible;
+    padding: 0;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    width: 120px;
+}
+.formulariodemo button:hover{
+    background: #B7CBFF;
+}
+.formulariodemo button:active, .formulariodemo button:focus{
+    background: #C9D8FF;
+}
+.formulariodemo button:before { /* Triângulo esquerdo. */
+    /*content: "";
+    border-color: transparent #D6E1FF transparent;
+    border-style: solid solid solid none;
+    border-width: 8px 8px 8px 0;
+    left: -6px;
+    position: absolute;
+    top: 12px;*/
+}
+.formulariodemo button:hover:before {
+    border-right-color: #C9D8FF;
+}
+.formulariodemo button:focus:before {
+    border-right-color: #C9D8FF;
+}
