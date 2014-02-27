@@ -275,6 +275,7 @@ UL { font-family: "verdana", "Arial", "Helvetica", sans-serif;
                  height:100%;
                  background: #2E6AB1;
                  width: 10% !important;
+                 vertical-align: top;
                }
 
 .navigationBarSublabel{  font-family: "verdana", "Arial", "Helvetica", sans-serif;

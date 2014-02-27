@@ -75,7 +75,7 @@
         <tr>
             <td bgcolor="#ebf0fd">
                 <p style="color: #0332B2; text-align: center; font-size: 16pt; font-weight: bold; font-family: OxygenBold;">
-                    <fmt:message key="credits.equip"/>
+                    <fmt:message key="credits.equipe"/>
                 </p>
                 <div class="creditos">
                 <p>

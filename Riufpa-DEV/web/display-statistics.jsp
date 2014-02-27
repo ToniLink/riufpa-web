@@ -115,12 +115,10 @@
     <h1 align="center"><fmt:message key="jsp.statistics.title"/></h1>
     <div id="texto_dysplayEstatistics"> 
     <%if(isItem){%>
-       Apresentam a quantidade de acessos por Item, ao(s) arquivo(s) do Item, acessos 
-           realizados nos últimos meses, por país e por cidade.
+        <fmt:message key="estatistica.desc.item"/>
     <% } 
       else{%>    
-           Apresentam a quantidade de acessos por comunidade, subcomunidade ou coleção,
-      realizados nos últimos meses, por país e por cidade.
+        <fmt:message key="estatistica.desc.com"/>
          <% }   
                   
          %>

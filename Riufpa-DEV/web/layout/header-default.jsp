@@ -219,10 +219,10 @@
             <div class="completar"></div>
             <%-- Logo do governo --%>
             <a href="http://www.brasil.gov.br" title="Portal Brasil" target="_blank">
-                <img src="<%= request.getContextPath()%>/layout/barraBrasil/logo_brasil.png"/>
+                <img alt="Portal Brasil" src="<%= request.getContextPath()%>/layout/barraBrasil/logo_brasil.png"/>
             </a>
             <a href="http://www.acessoainformacao.gov.br" title="Acesso à Informação" target="_blank">
-                <img src="<%= request.getContextPath()%>/layout/barraBrasil/acesso_info.png"/>
+                <img alt="Acesso à Informação" src="<%= request.getContextPath()%>/layout/barraBrasil/acesso_info.png"/>
             </a>
             <%-- Listras --%>
             <div class="listras"></div>
@@ -255,9 +255,9 @@
         
         <div class="banner">
             <map name="mapa_banner">
-                <area title="Página Inicial" shape="rect" coords="0,29,580,147" href="<%= request.getContextPath()%>/" />
+                <area title="Página Inicial" alt="Página Inicial" shape="rect" coords="0,29,580,147" href="<%= request.getContextPath()%>/" />
             </map>
-            <img usemap="#mapa_banner" src="<%= request.getContextPath()%>/image/banner_riufpa.jpg"/>
+            <img usemap="#mapa_banner" alt="Banner" src="<%= request.getContextPath()%>/image/banner_riufpa.jpg"/>
         </div>
         
         <%-- Banner do RIUFPA
@@ -353,12 +353,8 @@
 
         <%-- Page contents --%>
 
-        <%-- HACK: width, border, cellspacing, cellpadding: for non-CSS compliant Netscape, Mozilla browsers --%>
         <table class="centralPane">
-
-            <%-- HACK: valign: for non-CSS compliant Netscape browser --%>
-            <tr valign="top">
-
+            <tr>
                 <%-- Navigation bar --%>
                 <%
                     if (!navbar.equals("off")) {
