@@ -1,0 +1,81 @@
+/*
+    Document   : collection-home
+    Created on : 10/05/2013, 13:01:57
+    Author     : portal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.pageContents {
+    width: 100% !important;
+    float: left;
+}
+.sidebar{
+    width: 15% !important;
+}
+
+.button{
+    margin: 0px !important;
+}
+
+.busca form{
+    display: inline;
+}
+
+.ferramentas{
+    background: #EBF0FD;
+    border: 1px solid #5E78B5;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    width: 90%;
+}
+.ferramentas table{
+    margin: 0 auto;
+    width: 90%;
+}
+.ferramentas table #tquery{
+    width: 80%;
+}
+.ferramentas table tr > td{
+    padding-bottom: 10px;
+}
+.ferramentas label{
+    font-weight: bold;
+}
+.ferramentas .info {
+    width: 15%;
+    text-align: right;
+    padding-right: 5px;
+}
+.ferramentas table form{
+    display: inline;
+}
+
+.verTodos{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.descricao {
+    background: #EBF0FD;
+    border: 1px solid #5E78B5;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 40px;
+}
+.descricao p{
+    font-size: 11pt;
+}
+
+.logomarca{
+    width: 90%;
+    margin: 0 auto 20px;
+}

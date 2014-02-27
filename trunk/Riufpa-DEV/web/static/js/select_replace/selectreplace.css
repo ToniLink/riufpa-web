@@ -1,0 +1,139 @@
+.selreplace_scroll {
+    display: block;
+    width: 15px;
+    height: 100% !important;
+}
+
+.selreplace_scrollinner {
+    width: 15px;
+
+    background-color: #B8CCD1;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.selreplace_scrollinner_cont{
+    height: 100%;
+}
+
+.selreplace_scrollhandle {
+    height: 25%;
+    width: 15px;
+    display: block;
+    background: #2E6AB1;
+
+    border-radius: 7px;
+    transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+}
+
+
+.selreplace_scrollbuttonup, .selreplace_scrollbuttondown {
+    /*display: block;
+    width: 10px;
+    height: 26px;*/
+
+    display: none;
+}
+
+.selreplace_scrollbuttondown {
+    background-color: green;
+}
+
+.selreplace_scrollbuttonup {
+    background-color: green;
+}
+
+.selreplace_select {
+    display: block;
+    overflow: hidden;
+    border: 1px #A8C0FF solid;
+    border-radius: 5px;
+    cursor:default;
+    height: 30px;
+    font: 12pt Verdana, Arial;
+    cursor: pointer;
+
+    background: #e0e9ff;
+    background: -moz-linear-gradient(top,  #e0e9ff 0%, #c1d3ff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e9ff), color-stop(100%,#c1d3ff));
+    background: -webkit-linear-gradient(top,  #e0e9ff 0%,#c1d3ff 100%);
+    background: -o-linear-gradient(top,  #e0e9ff 0%,#c1d3ff 100%);
+    background: -ms-linear-gradient(top,  #e0e9ff 0%,#c1d3ff 100%);
+    background: linear-gradient(to bottom,  #e0e9ff 0%,#c1d3ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e9ff', endColorstr='#c1d3ff',GradientType=0 );
+
+}
+
+.selreplace_select:hover {
+    border: 1px #2E6AB1 solid;
+
+    background: #d6e1ff;
+    background: -moz-linear-gradient(top,  #d6e1ff 0%, #9bb7ff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d6e1ff), color-stop(100%,#9bb7ff));
+    background: -webkit-linear-gradient(top,  #d6e1ff 0%,#9bb7ff 100%);
+    background: -o-linear-gradient(top,  #d6e1ff 0%,#9bb7ff 100%);
+    background: -ms-linear-gradient(top,  #d6e1ff 0%,#9bb7ff 100%);
+    background: linear-gradient(to bottom,  #d6e1ff 0%,#9bb7ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6e1ff', endColorstr='#9bb7ff',GradientType=0 );
+
+}
+
+.selreplace_select:hover .selreplace_selectbutton{
+    border-left: 1px #2E6AB1 solid;
+}
+
+.selreplace_selectbutton {
+    background: url(arrow.png) no-repeat;
+    border-left: 1px #A8C0FF solid;
+    display: block;
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    right:0px;
+    top:0px;
+}
+
+.selreplace_optionsel {
+    background-color: #2E6AB1;
+    white-space:nowrap;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    display: block;
+}
+
+
+.selreplace_optionimg{
+    float: left;
+    padding-right: 5px;
+}
+
+.selreplace_option {
+    padding: 5px;
+    width: 100%;
+    display: block;
+    white-space:nowrap;
+}
+.selreplace_option:hover{
+    background-color: #D6E1FF;
+}
+
+.selreplace_selectinner{
+    margin: 5px;
+}
+
+.selreplace_selectbox {
+    cursor:default;
+    font: 12pt Verdana, Arial;
+    overflow: hidden;
+    width: 400px;
+    background: #EBF0FD;
+    -webkit-box-shadow:  2px 2px 5px 2px #ADADAD;
+    box-shadow:  2px 2px 5px 2px #ADADAD;
+    border: 1px #ADADAD solid;
+    z-index: 99;
+}

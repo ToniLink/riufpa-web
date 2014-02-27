@@ -1,0 +1,28 @@
+/*
+    Document   : group-edit
+    Created on : 06/09/2013, 09:50:26
+    Author     : portal
+    Description:
+        Sobrescreve os estilos do painel para adequar as lista de usuários e de grupos.
+*/
+
+
+.painel form{
+    text-align: center;
+}
+.painel table{
+    margin: 0 auto;
+    width: 90%;
+}
+.painel table td{
+    padding: 20px;
+}
+.painel table select{
+    display: block;
+    width: 100%;
+    font-size: 11pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+

@@ -1,0 +1,139 @@
+/*
+    Document   : botoes
+    Created on : 08/08/2013, 11:53:05
+    Author     : portal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* Default Azul*/
+.button{
+    font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor:pointer;
+    color: #2E6AB1;
+    width:auto;
+    margin-bottom: 10px;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    background: #C9D8FF;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #A8C0FF;
+    transition: all .2s;
+}
+.button:hover {
+    border:1px solid #5E78B5;
+    background: #B7CBFF;
+    color: #004CA6;
+}
+.button:active {
+    position:relative;
+    background: #AAC2FF;
+    color: #004CA6;
+    top: 1px;
+}
+.button a{
+    color: #2E6AB1;
+}
+a.button{
+    padding: 6px 10px;
+}
+
+/* Verde */
+.buttonGreen{
+    font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor:pointer;
+    color: #2B8922;/*-132*/
+    width:auto;
+    margin-bottom: 10px;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    background: #B3F2B8;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #6FCE79;
+    transition: all .2s;
+}
+.buttonGreen:hover {
+    border:1px solid #359141;
+    background: #9DE8A3;
+    color: #22751A;
+}
+.buttonGreen:active {
+    position:relative;
+    background: #8AE290;
+    color: #22751A;
+    top: 1px;
+}
+.buttonGreen a{
+    color: #36B12D;
+}
+a.buttonGreen{
+    padding: 6px 10px;
+}
+
+/* Vermelho */
+.buttonRed{
+    font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor:pointer;
+    color: #AD3434;
+    width:auto;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    background: #FFB2B2;
+    /* Border style */
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #ED8B8B;
+    transition: all .2s;
+}
+.buttonRed:hover {
+    border:1px solid #AD4141;
+    background: #FC9C9C;
+    color: #910000;
+}
+.buttonRed:active {
+    position:relative;
+    background: #FF9393;
+    color: #910000;
+    top: 1px;
+}
+.buttonRed a{
+    color: #910000;
+}
+a.buttonRed{
+    padding: 6px 10px;
+}
+
+/*Disativado*/
+.buttonDisabled{
+    font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor:default;
+    color: #A3A3A3;
+    width:auto;
+    margin-bottom: 10px;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    background: #E8E8E8;
+    /* Border style */
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #ADADAD;
+    transition: all .2s;
+}

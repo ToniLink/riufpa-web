@@ -1,0 +1,110 @@
+.menu {
+    font-size:14px;
+    font-weight:bold;
+    float: right;
+    width: auto;
+    text-align: right;
+}
+
+.menu ul {
+    background:#EBF0FD;
+    line-height: 2.0em;
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.menu li {
+    float:left;
+    padding:0;
+    margin:0;
+    position:relative;
+}
+
+.menu li a {
+    background-image: linear-gradient(bottom, rgb(235,240,253) 31%, rgb(201,216,255) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(235,240,253) 31%, rgb(201,216,255) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(235,240,253) 31%, rgb(201,216,255) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(235,240,253) 31%, rgb(201,216,255) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(235,240,253) 31%, rgb(201,216,255) 100%);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.31, rgb(235,240,253)),
+        color-stop(1, rgb(201,216,255))
+        );
+
+    color:#0053A0;
+    display:block;
+    font-weight:bold;
+    line-height:2.0em;
+    margin:0px;
+    padding:0px 15px;
+    text-align:center;
+    text-decoration : none;
+}
+
+.menu li a:hover, .menu ul li:hover a {
+    background: #2E6AB1;
+    color:white;
+    text-decoration:none;
+    border: 0px;
+}
+
+.menu li ul {
+    background:#EBF0FD;
+    display:none;
+    float: left;
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border-style:solid;
+    border-color:#C9D8FF;
+    position: absolute;
+    right: 0;
+    z-index:200;
+
+    -webkit-box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.7);
+    -moz-box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.7);
+    box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.7);
+
+    transition:opacity 1s ease;
+    -webkit-transition:opacity 1s ease;
+    -moz-transition:opacity 1s ease;
+    -o-transition:opacity 1s ease;
+}
+
+.menu li:hover ul {
+    display:block;
+}
+
+.menu li li {
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:220px;
+}
+
+.menu li:hover li a {
+    background:none;
+    color: #336699;
+}
+
+.menu li ul a {
+    display:block;
+    line-height:35px;
+    font-size:12px;
+    font-style:normal;
+    margin:0px;
+    padding:0px 21px;
+    text-align:right;
+}
+
+.menu li ul a:hover, .menu li ul li:hover a {
+    background:#2E6AB1;
+    color:#ffffff;
+    text-decoration:none;
+}

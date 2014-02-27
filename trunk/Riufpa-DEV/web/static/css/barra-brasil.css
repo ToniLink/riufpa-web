@@ -1,0 +1,104 @@
+/*
+    Document   : barra-brasil
+    Created on : 18/04/2013, 14:27:08
+    Author     : Manoel Afonso
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*Cria a área da barra do governo com as suas especificações (vide manual da barra)*/
+.barraBrasil{
+    height: 28px;
+    width: 100%;
+    background-color: #004b82;
+}
+/* A logo do governo fica na direita e sem bordas (por causa do IE) */
+.barraBrasil img{
+    float: right;
+    border: 0px;
+    padding-left: 25px;
+}
+
+/* Cria as listras verde e amarelo */
+.listras{
+    width: 90%;
+    height: 100%;
+    background-image:url('../../layout/barraBrasil/stripe.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+
+    /*
+     z-index:90000;
+    padding:13px;
+    margin-bottom:10px;
+    width: 90%;
+    border-bottom: 2px solid red;
+    */
+}
+
+/* Após a logo do governo, só pode haver o fundo azul */
+.completar{
+    background-color: #004b82;
+    float: right;
+    height: 28px;
+    width: 5%;
+}
+
+/* Área do Banner do RIUFPA: Centralizado, 90% de largura do site (padrão) */
+.banner{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ebf0fd;
+}
+/* Banner do RIUFPA: Centralizado e sem borda */
+.banner img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px;
+    width: 100%;
+}
+
+/* Barra de localização: Centralizado, 90% de largura do site (padrão) */
+.barraLocalizacao{
+    margin-left: auto;
+    margin-right: auto;
+    height:2.0em;
+    background: #C9D8FF;
+    width: 90%;
+}
+
+.bannerteste{
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+    background-image: url('../../image/logo-teste.png');
+}
+.bannerteste #titulo{
+    text-align: center;
+    padding: 50px;
+}
+.bannerteste #titulo a{
+    color: #EBF0FD;
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: OxygenBold;
+    text-shadow: 0px 0px 5px #004B82;
+
+    padding: 30px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    transition: all 0.2s ease;
+}
+.bannerteste #titulo a:hover{
+    text-shadow: 0px 0px 10px #004B82;
+    color: #C9D8FF;
+}

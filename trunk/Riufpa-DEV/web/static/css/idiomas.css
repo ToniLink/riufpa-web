@@ -1,0 +1,25 @@
+/*
+    Document   : idiomas
+    Created on : 08/10/2012, 09:37:25
+    Author     : portal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#bandeiras{
+    text-align: center;
+    margin-top: 15px;
+}
+.idiomas{
+    cursor: pointer;
+    opacity: 0.4;
+    margin-right: 3px;
+    margin-left: 3px;
+
+    transition:all 0.2s;
+    -moz-transition:all 0.2s;
+    -webkit-transition:all 0.2s;
+    -o-transition:all 0.2s;
+}
+.idiomas:hover{
+    opacity: 1;
+}

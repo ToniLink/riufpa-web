@@ -1,0 +1,89 @@
+/*
+    Document   : painel
+    Created on : 16/08/2013, 11:14:03
+    Author     : portal
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.painel{
+    width: 90%;
+    background: #EBF0FD;
+    border: 1px solid #5E78B5;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+}
+.painel h2{
+    color: black;
+    text-align: center;
+    font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    text-shadow: 1px 1px 1px #ccc;
+}
+.painel .msg{
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: Arial;
+    line-height: 20pt;
+    margin-bottom:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.painel .msg-mini{
+    text-align: center;
+    font-size: 12pt;
+    font-style: italic;
+    font-family: Arial;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.painel ul{
+    list-style: none;
+    line-height: 25pt;
+    margin-left: 25%;
+}
+.painel ul label{
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 11pt;
+}
+.painel ul label:hover{
+    text-shadow: 0px 0px 3px rgba(150, 150, 150, 0.4);
+}
+.painel .centralizar{
+    text-align: center;
+}
+
+.painel table{
+    padding: 5px;
+}
+.painel table td{
+    padding: 5px;
+}
+.painel table td.right {
+    text-align: right;
+}
+
+.controles{
+    text-align: center;
+    margin: 20px;
+}
+.controles form{
+    width: 50%;
+    display: inline;
+}
+.controles a{
+    margin-left: 10px;
+    margin-right:10px;
+}
