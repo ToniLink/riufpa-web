@@ -252,6 +252,7 @@ UL { font-family: "verdana", "Arial", "Helvetica", sans-serif;
     height:100%;
     width:15%;
     position:relative;
+    vertical-align: top;
 }
 .sidebar h3{
     color: white;

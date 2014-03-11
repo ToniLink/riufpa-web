@@ -73,8 +73,10 @@ import java.sql.SQLException;
 import java.util.StringTokenizer;
 
 import javax.imageio.ImageIO;
+import javax.servlet.ServletResponse;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.jstl.fmt.LocaleSupport;
@@ -161,6 +163,8 @@ public class ItemListTag extends TagSupport {
     public int doStartTag() throws JspException {
         JspWriter out = pageContext.getOut();
         HttpServletRequest hrq = (HttpServletRequest) pageContext.getRequest();
+        HttpServletResponse response = (HttpServletResponse) pageContext.getResponse();
+        response.setContentType("text/html;charset=UTF-8");
 
         boolean emphasiseDate = false;
         boolean emphasiseTitle = false;
@@ -422,7 +426,7 @@ public class ItemListTag extends TagSupport {
                             metadata = "<a href=\"" + hrq.getContextPath() + "/handle/"
                                     + items[i].getHandle() + "\">"
                                     // Queremos que as tags sup e sub sejam renderizadas, por isso as colocamos de volta.
-                                    + Utils.addEntities(metadataArray[0].value).replaceAll("&lt;(/)?(sup|sub)&gt;", "<$1$2>")
+                                    + Utils.addEntities(metadataArray[0].value)
                                     + "</a>";
                         } // format all other fields
                         else {

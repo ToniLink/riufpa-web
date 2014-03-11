@@ -51,3 +51,15 @@ function ordenar(){
         formulario.submit();
     }
 }
+
+/* Procura pelas tags <sup> e <sub> e as renderiza. Por padrão, elas são mostradas pelo browser, como
+ * &lt;sup&gt; ou &lt;sub&gt;
+ */
+function supSubescrito(){
+    var vals = $$('td');
+    for (var i = 0; i < vals.length; i++){
+        var t = vals[i].innerHTML.replace(/(&lt;(su(p|b))&gt;(.*?)&lt;\/(su(p|b))&gt;)/gi, "<$2>$4</$5>");
+        vals[i].innerHTML = t;
+    }
+}
+document.observe('dom:loaded', supSubescrito);
