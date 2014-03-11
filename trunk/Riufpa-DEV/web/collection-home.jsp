@@ -199,7 +199,7 @@
                 </td>
             </tr>
         </table>
-    </div>
+    </div> 
 
     <%
         if (intro != null && !intro.isEmpty()) {
