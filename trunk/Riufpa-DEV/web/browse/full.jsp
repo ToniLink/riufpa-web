@@ -40,8 +40,8 @@
 
 <%--
   - Display the results of browsing a full hit list
-    Exibe as listagens de DATA DE PUBLICAÇÃO ou TÍTULO, ou qualquer outra coisa que precise ser listada com muitos detalhes.
-    Como essa é uma listagem simples, a classe se chama single.
+    Exibe as listagens de DATA DE PUBLICAÃÃO ou TÃTULO, ou qualquer outra coisa que precise ser listada com muitos detalhes.
+    Como essa Ã© uma listagem simples, a classe se chama single.
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
@@ -186,6 +186,13 @@
     if (letraAtual == null) {
         letraAtual = "";
     }
+    String bt = "";
+    String teste = request.getParameter("bt");
+    if(teste == null){teste = "";}
+    if(teste.equalsIgnoreCase("true")){
+      layoutNavbar = "off";
+      bt = "true";
+    }
 %>
 
 <%-- OK, so here we start to develop the various components we will use in the UI --%>
@@ -197,6 +204,7 @@
     <link rel="stylesheet" href="<%= request.getContextPath()%>/static/css/paginacao.css" type="text/css" />
     <link rel="stylesheet" href="<%= request.getContextPath()%>/static/css/browse-single-full.css" type="text/css" />
     <link rel="stylesheet" href="<%= request.getContextPath()%>/static/css/mydspace.css" type="text/css" />
+    <script type="text/javascript" src="<%= request.getContextPath()%>/static/js/riufpa/results.js"></script>
     
     <h1>
         <fmt:message key="browse.full.header">
@@ -205,7 +213,7 @@
         <fmt:message key="<%= typeKey%>"/>
         <%= value%>
     </h1>
-
+    
     <%-- Include the main navigation for all the browse pages --%>
     <%-- This first part is where we render the standard bits required by both possibly navigations --%>
     <div id="browse_navigation" class="browseBar">
@@ -307,8 +315,9 @@
                         }
                     %>
             </ul>
-
+            
             <span class="browseBarLabel"><fmt:message key="browse.nav.enter"/>&nbsp;</span>
+            <input type="hidden" name="bt" value="<%=bt %>" >
             <input type="text" name="starts_with"/>&nbsp;<input class="button" type="submit" value="<fmt:message key="browse.nav.go"/>" />
 
             <%
@@ -482,6 +491,8 @@
     <dspace:browselist browseInfo="<%= bi%>" emphcolumn="<%= bix.getSortOption().getMetadata()%>" />
     <%
         }
+                                
+                                    
     %>
 
     <%-- give us the bottom report on what we are looking at --%>
@@ -516,5 +527,21 @@
     <%--
     <!-- <%= bi.toString() %> -->
     --%>
-
-</dspace:layout>
+    
+    <script type="text/javascript">
+       var as = document.getElementsByTagName('iframe');
+         for (var i = 0; i < as.length; i++){
+        if (as[i].id === "testando"){
+            alert('existe', i);
+        }else{
+            alert('não existe',5, i);
+        }
+    }
+        
+        //if(document.getElementById('testando') !== "undefined" ){
+            
+          //  alert(document.getElementsByTagName('teste'));
+        //document.getElementById('primary-nav').style.display = 'none';
+        //}
+    </script>    
+  </dspace:layout> 

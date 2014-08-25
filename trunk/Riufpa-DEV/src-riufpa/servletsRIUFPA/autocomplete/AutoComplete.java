@@ -57,16 +57,30 @@ public class AutoComplete extends AbstractBrowserServlet {
             escopoAssunto.setOrder("ASC");
             escopoAssunto.setStartsWith(request.getParameter("starts_with"));
             escopoAssunto.setResultsPerPage(this.qtdeResultados);
+            
+            //Título
+            BrowserScope escopoTitulo = new BrowserScope(context);
+            escopoTitulo.setBrowseIndex(BrowseIndex.getBrowseIndex("title"));
+            escopoTitulo.setOrder("ASC");
+            escopoTitulo.setStartsWith(request.getParameter("starts_with"));
+            escopoTitulo.setResultsPerPage(this.qtdeResultados);
 
             String t = request.getParameter("tipo");
-
+            
+              
+            
             boolean usarAutores = false;
             boolean usarAssunto = false;
+            boolean usarTitulo = false;
 
             if(t.equals("autor")){ //autor e [co]orientador
                 usarAutores = true;
-            } else {
+            } 
+            else if (t.equals("assunto")){
                 usarAssunto = true;
+            }
+            else if (t.equals("titulo")){
+                usarTitulo = true;
             }
 
             BrowseEngine be = new BrowseEngine(context);
@@ -98,6 +112,20 @@ public class AutoComplete extends AbstractBrowserServlet {
             if(usarAssunto){
                 BrowseInfo binfo = be.browse(escopoAssunto);
                 this.imprimir(binfo.getStringResults(), out);
+            }
+            
+            if(usarTitulo){
+                BrowseInfo binfo = be.browse(escopoTitulo);
+                ArrayList <String> listaTitulos = new ArrayList<String>();
+                BrowseItem titulos[] = binfo.getBrowseItemResults();  
+                
+                for (int i = 0; i < binfo.getBrowseItemResults().length; i++) {
+                    listaTitulos.add(titulos[i].getName());
+                }
+                 
+                this.imprimir(listaTitulos, out);
+               
+          
             }
 
         } catch (BrowseException ex) {

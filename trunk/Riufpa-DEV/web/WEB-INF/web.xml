@@ -424,6 +424,14 @@
         <servlet-name>Módulo de Estatísticas</servlet-name>
         <servlet-class>servletsRIUFPA.estatisticas.controller.Estatisticas</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EscolherTitulo</servlet-name>
+        <servlet-class>servletsRIUFPA.EscolherTitulo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditarAssunto</servlet-name>
+        <servlet-class>servletsRIUFPA.EditarAssunto</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>shibboleth-login</servlet-name>
         <url-pattern>/shibboleth-login</url-pattern>
@@ -685,6 +693,14 @@
     <servlet-mapping>
         <servlet-name>Módulo de Estatísticas</servlet-name>
         <url-pattern>/Estatistica</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EscolherTitulo</servlet-name>
+        <url-pattern>/EscolherTitulo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditarAssunto</servlet-name>
+        <url-pattern>/EditarAssunto</url-pattern>
     </servlet-mapping>
     <mime-mapping>
         <extension>ico</extension>

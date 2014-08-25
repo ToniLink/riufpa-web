@@ -59,7 +59,7 @@
     </table>
 
 
-    <table class="tabela">
+        <table id="usuarios" class="tabela">
 
         <tr id="tituloTabela">
             <td colspan="5"><fmt:message key="estatistica.detalhesUsuarios"/></td>
@@ -130,12 +130,27 @@
                     
                     if (cont % 2 == 0) {
 
+         if(inicio == -1){               
         %>
+        
+        <tr id="zero">
+        <% }
+                 else{
+           %>    
         <tr>
-            <%       } else {
+            <%       }    
+                    
+                    } else {
+             if(inicio == -1) {          
             %>
-        <tr class="stripe">
-            <%               }
+        <tr id="zero" class="stripe">
+            <%      }  
+             else{ %>
+                          
+        <tr class="stripe">             
+            <%         
+                     }
+                    }
             %>
             <td><%out.println(nomeCompleto);%></td>
             <% if (inicio != -1) {%>
@@ -169,4 +184,11 @@
     <%
             contexto.complete();
      %>
+     
+     <script>
+         while(document.getElementById("zero")!==null){
+         var tr = document.getElementById("zero");
+          tr.parentNode.removeChild(tr);
+         }
+     </script>
 </dspace:layout>

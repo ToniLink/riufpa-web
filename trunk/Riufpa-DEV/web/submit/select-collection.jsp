@@ -72,6 +72,8 @@
 
     // Obtain DSpace context
     Context context = UIUtil.obtainContext(request);
+    
+   
 %>
 
 <dspace:layout locbar="off"

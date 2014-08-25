@@ -163,6 +163,11 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                <a href= "<%=request.getContextPath()%>/Estatistica?nome=csc&publica=true">
+                    <fmt:message key="jsp.layout.navbar-admin.statistics"/>
+                </a> 
+            </li>
 
         </ul>
 

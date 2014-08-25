@@ -90,6 +90,7 @@
       %>
 
       <li><a href="<%= request.getContextPath() %>/dspace-admin/withdrawn"><fmt:message key="jsp.layout.navbar-admin.withdrawn"/></a></li>
+      <li><a href="<%= request.getContextPath() %>/EditarAssunto"><fmt:message key="jsp.layout.navbar-admin.editar-assuntos"/></a></li>
       
     </ul>
 </div>

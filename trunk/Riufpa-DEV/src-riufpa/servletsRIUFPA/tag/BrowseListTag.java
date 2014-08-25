@@ -435,7 +435,7 @@ public class BrowseListTag extends TagSupport {
                             metadata = "<a href=\"" + hrq.getContextPath() + "/handle/"
                                     + items[i].getHandle() + "\">"
                                     // Queremos que as tags sup e sub sejam renderizadas, por isso as colocamos de volta.
-                                    + Utils.addEntities(metadataArray[0].value).replaceAll("&lt;(/)?(sup|sub)&gt;", "<$1$2>")
+                                    + Utils.addEntities(metadataArray[0].value)//.replaceAll("&lt;(/)?(sup|sub)&gt;", "<$1$2>")
                                     + "</a>";
                         } // format all other fields
                         else {

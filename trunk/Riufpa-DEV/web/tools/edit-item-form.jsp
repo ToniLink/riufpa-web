@@ -176,7 +176,7 @@
 
 
     <h1><fmt:message key="jsp.tools.edit-item-form.title"/></h1>
-
+     
     <div class="boxAlerta">
         <fmt:message key="jsp.tools.edit-item-form.note"/>
     </div>
@@ -418,6 +418,7 @@
         <script type="text/javascript">
                         function sugerirAssunto(textArea, e) {
                             var val = $('addfield_dctype');
+                            
                             if (val.options[val.selectedIndex].innerHTML === 'dc.subject') {
                                 ajax_showOptions(textArea, 'starts_with', e, removerQuebra, null, null, 'assunto');
                             }

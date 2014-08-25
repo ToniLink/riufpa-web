@@ -165,4 +165,14 @@
 
         </div>
     </form>
+                           
+   <script>
+       
+       var objeto1 = document.getElementsByName('field_commercial');
+       objeto1[1].checked = true ;
+       document.forms.namedItem('field_commercial');
+       document.getel
+   </script>
 </dspace:layout>
+    
+    

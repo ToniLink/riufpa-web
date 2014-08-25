@@ -331,13 +331,14 @@
                             </li>
                             <li>
                                 <a href="<%= request.getContextPath()%>/outros/em-construcao.jsp">
-                                    <fmt:message key="navbar.help.site"/>
+                                    <fmt:message key="navbar.help.guia"/>
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0);" onclick="TINY.box.show({iframe: '<%= request.getContextPath()%>/faq.jsp', width: largura, height: altura, animate: false});">
-                                    <fmt:message key="navbar.help.faq"/>
+                                <fmt:message key="navbar.help.faq"/>
                                 </a>
+                             
                             </li>
                         </ul>
                     </li>

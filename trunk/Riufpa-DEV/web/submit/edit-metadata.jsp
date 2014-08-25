@@ -88,6 +88,7 @@
 <%
     request.setAttribute("LanguageSwitch", "hide");
     Object j = session;
+    
 %>
 <%!
 
@@ -355,6 +356,8 @@
          sb.append("<td><input type=\"text\" name=\"")
            .append(last.toString())
            .append("\" size=\"23\" placeholder=\"" + plhUltimo + "\"" + "onkeyup=\"ajax_showOptions(this,'starts_with',event,teste, \'" + last.toString() + "\', \'" + first.toString() +"\','autor')\"" + "autocomplete=\"off\"");
+         
+                  
          if (readonly)
          {
              sb.append("disabled=\"disabled\" ");
@@ -364,6 +367,7 @@
                    .append("\"/></td>\n<td nowrap=\"nowrap\"><input type=\"text\" name=\"")
                    .append(first.toString())
            .append("\" size=\"23\" placeholder=\"" + plhPrimeiro + "\"");
+         //ultimo nome
          if (readonly)
          {
              sb.append("disabled=\"disabled\" ");
@@ -461,6 +465,7 @@
             .append("<select name=\"")
             .append(fieldName)
             .append("_month");
+         
          if (repeatable && i>0)
          {
             sb.append('_').append(i);
@@ -498,6 +503,7 @@
          {
              sb.append("\" disabled=\"disabled");
          }
+         //Data Publicação
          sb.append("\" size=\"2\" maxlength=\"2\" value=\"")
             .append((dateIssued.getDay() > 0 ?
                      String.valueOf(dateIssued.getDay()) : "" ))
@@ -793,13 +799,13 @@
              auth = "";
              conf= unknownConfidence;
            }
-
+           //Título
            sb.append("<td colspan=\"2\">");
            String fieldNameIdx = fieldName + ((repeatable && i != fieldCount-1)?"_" + (i+1):"");
            StringBuffer inputBlock = new StringBuffer("<input type=\"text\" name=\"")
              .append(fieldNameIdx)
              .append("\" id=\"")
-             .append(fieldNameIdx).append("\" size=\"50\" value=\"")
+             .append(fieldNameIdx).append("\" size=\"5\" value=\"")
              .append(val +"\"")
              .append((hasVocabulary(vocabulary)&&closedVocabulary) || readonly?" disabled=\"disabled\" ":"")
              .append("/>")
@@ -809,7 +815,15 @@
                               fieldName, auth, conf, false, repeatable,
                               defaults, inputBlock, collectionID))
              .append("</td>\n");
-
+           
+          /* sb.append("<td align=\"left\"><input type=\"text\" name=\"")
+             .append(fieldNameIdx)
+             .append("\" size=\"15\" onkeyup=\"ajax_showOptions(this,'starts_with',event,teste2, \'" + fieldNameIdx + "\', \'null\','titulo')\" autocomplete=\"off\"")
+             .append((hasVocabulary(vocabulary)&&closedVocabulary) || readonly?" disabled=\"disabled\" ":"")
+             .append("/>")
+             .append(doControlledVocabulary(fieldNameIdx, pageContext, vocabulary, readonly))
+             .append("</td>\n"); */
+           
           if (repeatable && !readonly && i < defaults.length)
           {
              // put a remove button next to filled in values
