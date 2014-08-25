@@ -79,7 +79,7 @@
     }
 */
     try {
-        BufferedReader in = new BufferedReader(new FileReader("/dspace/log/dspace-log-general-2013-8-19.dat"));
+        BufferedReader in = new BufferedReader(new FileReader("/dspace/log/dspace-log-general-last.dat"));
             String str;
             while (in.ready()) {
                 str = in.readLine();

@@ -24,6 +24,7 @@ var estilo = {
  *Função para validar os dados dos campos do formulário.
  */
 function validaCampo(form) {
+    
     if (form.nome.value === "") {
         $('tnome').addTip(msg_nome, estilo);
         return false;
@@ -44,6 +45,7 @@ function validaCampo(form) {
         return false;
     }
 
+    
     return true;
 }
 

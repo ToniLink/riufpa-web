@@ -142,11 +142,12 @@
     }
 %>
 
-<dspace:layout titlekey="browse.page-title">
-
+ <dspace:layout titlekey="browse.page-title">
+     
     <%-- Estilos de paginação --%>
     <link rel="stylesheet" href="<%= request.getContextPath()%>/static/css/browse-single-full.css" type="text/css" />
     <link rel="stylesheet" href="<%= request.getContextPath()%>/static/css/mydspace.css" type="text/css" />
+    <script type="text/javascript" src="<%= request.getContextPath()%>/static/js/riufpa/results.js"></script>
     
     <%-- Build the header (careful use of spacing) --%>
     <h1>
@@ -155,7 +156,7 @@
         </fmt:message>
         <fmt:message key="<%= typeKey%>"/>
     </h1>
-
+    
     <%-- Include the main navigation for all the browse pages --%>
     <%-- This first part is where we render the standard bits required by both possibly navigations --%>
     <div class="browseBar" id="browse_navigation">
@@ -454,4 +455,4 @@
     <!-- <%= bi.toString() %> -->
     --%>
 
-</dspace:layout>
+    </dspace:layout> 

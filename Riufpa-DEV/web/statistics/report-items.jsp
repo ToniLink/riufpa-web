@@ -65,7 +65,7 @@
         </tr>
 
         <tr class="stripe">
-            <td><b>Total de Items no RIUFPA</b></td>
+            <td><b>Total de Itens no RIUFPA</b></td>
             <td class="qtde"><b>${requestScope.total_itens}</b></td>
         </tr>
     </table>
