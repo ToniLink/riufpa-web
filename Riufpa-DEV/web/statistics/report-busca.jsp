@@ -83,7 +83,7 @@
             String str;
             while (in.ready()) {
                 str = in.readLine();
-                System.out.println(str);
+                
             }
             in.close();
     } catch (IOException e) {

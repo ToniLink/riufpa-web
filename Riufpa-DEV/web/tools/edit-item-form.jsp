@@ -536,12 +536,14 @@
                 if (bCreateBits) {
             %>
             <input type="submit" class="button" name="submit_addbitstream" value="<fmt:message key="jsp.tools.edit-item-form.addbit.button"/>"/>
+            
             <%  }
-
+                
                 if (ConfigurationManager.getBooleanProperty("webui.submit.enable-cc") && bccLicense) {
                     String s;
                     Bundle[] ccBundle = item.getBundles("CC-LICENSE");
                     s = ccBundle.length > 0 ? LocaleSupport.getLocalizedMessage(pageContext, "jsp.tools.edit-item-form.replacecc.button") : LocaleSupport.getLocalizedMessage(pageContext, "jsp.tools.edit-item-form.addcc.button");
+                    
             %>
             <input type="submit" class="button" name="submit_addcc" value="<%= s%>" />
             <input type="hidden" name="handle" value="<%= ConfigurationManager.getProperty("handle.prefix")%>"/>

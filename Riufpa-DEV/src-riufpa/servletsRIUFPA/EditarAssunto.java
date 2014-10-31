@@ -38,7 +38,7 @@ public class EditarAssunto extends org.dspace.app.webui.servlet.DSpaceServlet {
     private static Logger log = Logger.getLogger(EditarAssunto.class);
     
     private String nome = "dspace";
-    private String senha = "dspace";
+    private String senha = "wb8gv7F3ketvkwqS7CtC";
     private String url = "jdbc:postgresql://127.0.0.1:5432/dspace";
     private Connection con;
     private Statement stat;
@@ -59,8 +59,8 @@ public class EditarAssunto extends org.dspace.app.webui.servlet.DSpaceServlet {
             throws ServletException, IOException, SQLException, AuthorizeException {
 
         // check to see if the statistics are restricted to administrators
-        boolean publicise = ConfigurationManager.getBooleanProperty("report.public");
-
+        //boolean publicise = ConfigurationManager.getBooleanProperty("report.public");
+        boolean publicise = false;
         // determine the navigation bar to be displayed
         String navbar = (publicise == false ? "admin" : "default");
         request.setAttribute("navbar", navbar);
@@ -70,8 +70,8 @@ public class EditarAssunto extends org.dspace.app.webui.servlet.DSpaceServlet {
         
         String  palavraAntiga = request.getParameter("palavraAntiga");
         String  palavraNova = request.getParameter("palavraNova");
-        System.out.println("Palavra Antiga - "+ palavraAntiga);
-        System.out.println("Palavra Nova - "+ palavraNova);
+        /*System.out.println("Palavra Antiga - "+ palavraAntiga);
+        System.out.println("Palavra Nova - "+ palavraNova);*/
         
         if(palavraAntiga == null || palavraNova == null ){
            

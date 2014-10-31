@@ -25,7 +25,7 @@
     
     
     <h1>Editar Palavra-chave</h1>
-    <form id="editarAssunto" action="<%=request.getContextPath()%>/EditarAssunto" class="tabela" method="post" onsubmit="return validaCampo2(this);">
+    <form id="editarAssunto" action="<%=request.getContextPath()%>/EditarAssunto" class="tabela" method="post" onsubmit="return validaCampo2(this);" accept-charset="UTF-8">
        
        
         <table >

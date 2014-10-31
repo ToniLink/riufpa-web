@@ -316,6 +316,7 @@
                             <%
                                 for (SortOption sortBy : sortOptions) {
                                     if (sortBy.isVisible()) {
+                                       
                                         String selected = (sortBy.getName().equals(sortedBy) ? "selected=\"selected\"" : "");
                                         String mKey = "search.sort-by." + sortBy.getName();
                             %> <option value="<%= sortBy.getNumber()%>" <%= selected%>><fmt:message key="<%= mKey%>"/></option><%
@@ -378,10 +379,13 @@
         <jsp:param name="pageFirst" value="<%= pageFirst%>" />
 
         <jsp:param name="so" value="<%= so%>" />
-
+        
+        <jsp:param name="sorted-by" value="<%= sortedBy %>" />
+               
+              
         <jsp:param name="qResults" value="<%= qResults%>" />
     </jsp:include>
-
+    
     <%-- Comunidades encontradas --%>
     <%
         if (communities.length > 0) {
@@ -426,6 +430,8 @@
         <jsp:param name="pageFirst" value="<%= pageFirst%>" />
 
         <jsp:param name="so" value="<%= so%>" />
+        
+        <jsp:param name="sorted-by" value="<%= sortedBy %>" />
 
         <jsp:param name="qResults" value="<%= qResults%>" />
     </jsp:include>
