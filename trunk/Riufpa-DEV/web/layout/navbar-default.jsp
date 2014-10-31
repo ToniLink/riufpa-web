@@ -110,6 +110,39 @@
         </li>
         <li class="menuparent">
             <a href="javascript:void(0);">
+                <fmt:message key="jsp.navbar.sobre"/>
+            </a>
+            <ul>
+                <li>
+                    <a href="<%= request.getContextPath() %>/outros/sobre-repositorio.jsp?sobre=missao">
+                    <fmt:message key="jsp.layout.navbar-default.missao"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<%= request.getContextPath() %>/outros/sobre-repositorio.jsp?sobre=objetivo">
+                    <fmt:message key="jsp.layout.navbar-default.objetivos"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<%= request.getContextPath() %>/outros/sobre-repositorio.jsp?sobre=conteudos">
+                    <fmt:message key="jsp.layout.navbar-default.conteudos"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<%= request.getContextPath() %>/outros/sobre-repositorio.jsp?sobre=direitos">
+                    <fmt:message key="jsp.layout.navbar-default.direitos-autor"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<%= request.getContextPath() %>/outros/sobre-repositorio.jsp?sobre=organizacao">
+                    <fmt:message key="jsp.layout.navbar-default.organizacao"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        
+        <li class="menuparent">
+            <a href="javascript:void(0);">
                 <fmt:message key="jsp.navbar.indexes"/>
             </a>
             <ul>

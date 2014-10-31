@@ -25,7 +25,26 @@
     int pageFirst = ((Integer) request.getAttribute("pagefirst")).intValue();
 
     SortOption so = (SortOption) request.getAttribute("so");
-
+    
+    String sorted = request.getParameter("sorted-by");
+    int opcao = 0;
+    if(sorted == null){
+        sorted = "";
+    }
+    else{
+        if(sorted.equalsIgnoreCase("title")){
+            opcao = 1;
+        }
+         else if (sorted.equalsIgnoreCase("dateissued")){
+                 opcao = 2;   
+        }
+                     else if (sorted.equalsIgnoreCase("dateaccessioned")){
+                    opcao = 3;
+                  }
+       }
+   
+    
+    
     QueryResults qResults = (QueryResults) request.getAttribute("queryresults");
 
 %>
@@ -41,7 +60,7 @@
                             + searchScope
                             + "/simple-search?query="
                             + URLEncoder.encode(queryOriginal, "UTF-8")
-                            + "&amp;sort_by=" + (so != null ? so.getNumber() : 0)
+                            + "&amp;sort_by=" + (sorted != "" ? opcao : 0)
                             + "&amp;order=" + order
                             + "&amp;rpp=" + rpp
                             + "&amp;etal=" + etAl
@@ -53,7 +72,7 @@
 
                     nextURL = nextURL + (pageCurrent) * qResults.getPageSize();
 
-
+                    
                     if (pageFirst != pageCurrent) {
                 %>
                 <li><a class="anteriorProx" href="<%= prevURL%>"><fmt:message key="jsp.search.general.previous" /></a></li>
@@ -66,7 +85,7 @@
                                     + searchScope
                                     + "/simple-search?query="
                                     + URLEncoder.encode(queryOriginal, "UTF-8")
-                                    + "&amp;sort_by=" + (so != null ? so.getNumber() : 0)
+                                    + "&amp;sort_by=" + (sorted != "" ? opcao : 0)
                                     + "&amp;order=" + order
                                     + "&amp;rpp=" + rpp
                                     + "&amp;etal=" + etAl

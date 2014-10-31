@@ -348,9 +348,9 @@ public class Estatisticas extends org.dspace.app.webui.servlet.DSpaceServlet {
         try {
             comp = HandleManager.resolveToObject(context, dsobject[0].getHandle());
 
-            for (int i = 0; i < dsobject.length; i++) {
+            for (int i = 0; i < dsobject.length -1; i++) {
                 StatisticsListing statListing = new StatisticsListing(new StatisticsDataVisits(comp));
-
+                
                 DatasetDSpaceObjectGenerator dsoAxis = new DatasetDSpaceObjectGenerator();
                 dsoAxis.addDsoChild(tipo, 50, false, -1);
                 statListing.addDatasetGenerator(dsoAxis);
