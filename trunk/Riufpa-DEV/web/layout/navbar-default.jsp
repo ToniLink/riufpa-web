@@ -143,6 +143,67 @@
         
         <li class="menuparent">
             <a href="javascript:void(0);">
+                <fmt:message key="jsp.navbar.politica"/>
+            </a>
+            <ul>
+                <li>
+                    <a href="<%= request.getContextPath() %>/outros/politicas.jsp?politica=conteudo">
+                    <fmt:message key="jsp.layout.navbar-default.politica-conteudo"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<%= request.getContextPath() %>/outros/politicas.jsp?politica=gerenciamento">
+                    <fmt:message key="jsp.layout.navbar-default.politica-gerenciamento"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<%= request.getContextPath() %>/outros/politicas.jsp?politica=direitos">
+                    <fmt:message key="jsp.layout.navbar-default.politica-direitos"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<%= request.getContextPath() %>/outros/politicas.jsp?politica=subdep">
+                    <fmt:message key="jsp.layout.navbar-default.politica-subdep"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<%= request.getContextPath() %>/outros/politicas.jsp?politica=preservacao">
+                    <fmt:message key="jsp.layout.navbar-default.politica-preservacao"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        
+        <li class="menuparent">
+            <a href="javascript:void(0);">
+                <fmt:message key="jsp.navbar.docs"/>
+            </a>
+            <ul>
+                <%--<li>
+                    <a href="<%= request.getContextPath()%>/outros/em-autorizacao.jsp">
+                        <fmt:message key="jsp.navbar.docs.politica"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<%= request.getContextPath()%>/outros/em-autorizacao.jsp">
+                        <fmt:message key="jsp.navbar.docs.pii"/>
+                    </a>
+                </li>--%>
+                <li>
+                    <a href="<%= request.getContextPath()%>/docs_riufpa/licenca_distribuicao_nao_exclusiva.pdf" target="_blank">
+                        <fmt:message key="jsp.navbar.docs.licenca"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<%= request.getContextPath()%>/docs_riufpa/termo_de_autorizacao_do_autor.pdf" target="_blank">
+                        <fmt:message key="jsp.navbar.docs.autorizacao"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        
+        <li class="menuparent">
+            <a href="javascript:void(0);">
                 <fmt:message key="jsp.navbar.indexes"/>
             </a>
             <ul>
@@ -164,28 +225,6 @@
             </ul>
         </li>
 
-        <li class="menuparent">
-            <a href="javascript:void(0);">
-                <fmt:message key="jsp.navbar.docs"/>
-            </a>
-            <ul>
-                <li>
-                    <a href="<%= request.getContextPath()%>/outros/em-autorizacao.jsp">
-                        <fmt:message key="jsp.navbar.docs.politica"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="<%= request.getContextPath()%>/outros/em-autorizacao.jsp">
-                        <fmt:message key="jsp.navbar.docs.pii"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="<%= request.getContextPath()%>/docs_riufpa/termo_de_autorizacao_do_autor.pdf" target="_blank">
-                        <fmt:message key="jsp.navbar.docs.autorizacao"/>
-                    </a>
-                </li>
-            </ul>
-        </li>
 
         <li class="menuparent">
             <a href="javascript:void(0);">

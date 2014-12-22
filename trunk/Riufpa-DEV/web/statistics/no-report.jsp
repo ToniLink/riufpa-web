@@ -38,6 +38,11 @@
   - DAMAGE.
   --%>
 
+<%@page import="java.net.URL"%>
+<%@page import="java.io.FileOutputStream"%>
+<%@page import="java.io.InputStream"%>
+<%@page import="java.io.InputStream"%>
+<%@page import="java.io.File"%>
 <%--
   - Renders a page containing a statistical summary of the repository usage
   --%>
@@ -49,11 +54,14 @@
 
 <%
     String navbar = (String) request.getAttribute("navbar");
+    
+   
 %>
 <dspace:layout navbar="<%=  navbar %>" titlekey="jsp.statistics.no-report.title">
 
 <p>
     <fmt:message key="jsp.statistics.no-report.info1"/>
 </p>
+
 
 </dspace:layout>
