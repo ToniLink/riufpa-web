@@ -37,7 +37,7 @@ function separarAbstracts(){
  * Transforma os links de texto em links clicáveis, como links para o doi, revistas, etc.
  * @returns {undefined}
  */
-function inserirLinks(){
+/*function inserirLinks(){
     var vals = $$('td.metadataFieldValue');
     var regex = /(.*?&lt;)([^ ]+)(&gt;.*)/;
     for (var i = 0; i < vals.length; i++){
@@ -47,7 +47,7 @@ function inserirLinks(){
             vals[i].innerHTML = t;
         }
     }
-}
+}*/
 
 
 /*SCRIPT PARA CONFIGURAR O FORMATO DAS DATAS PARA DIA-MÊS-ANO.*/

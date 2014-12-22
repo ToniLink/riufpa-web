@@ -150,8 +150,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="<%= request.getContextPath()%>/outros/em-construcao.jsp">
-                                    <fmt:message key="navbar.help.site"/>
+                                <a href="javascript:void(0);" onclick="TINY.box.show({iframe: '<%= request.getContextPath()%>/manual-deposito.jsp', width: largura, height: altura, animate: false});">
+                                    <fmt:message key="navbar.help.guia"/>
                                 </a>
                             </li>
                             <li>
