@@ -1,0 +1,1 @@
+Este projeto consiste na interface web do repositório institucional da UFPA (RIUFPA). Tal interface consiste primariamente de páginas JSP (daí JSPUI), mas também conta com consideráveis temas CSS e Javascript. O JSPUI do RIUFPA é uma versão personalizada do tema padrão do DSpace v1.6, porém ela é compatível com o Dspace v3.2.
